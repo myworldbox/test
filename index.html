@@ -7,14 +7,13 @@
     * {
         overflow: none;
         margin: 0;
+        padding: 0;
         overflow: auto;
         font-family: "Merienda", cursive;
     }
 
     .footer-div {
-        width: 100%;
         background: linear-gradient(190deg, darkred 0%, rgb(2, 2, 49) 51%, #013654 100%);
-
         display: flex;
         flex-direction: column;
         color: white;
@@ -29,49 +28,54 @@
 
     .footer-div div div {
         max-width: 50%;
-        padding: 35px;
+        padding: 20px;
         flex-direction: column;
 
     }
 
-    .footer-div div div div {
+    .footer-div-3 div {
+        width: 100%;
         flex-direction: row;
+        text-align: center;
     }
 
-    p {
+
+    a {
+        margin: 15px;
+        padding: 5px;
+        color: white;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border-left: 1px solid yellow;
+        border-bottom: 1px solid yellow;
+    }
+    
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         text-align: left;
+        padding: 20px 0;
     }
 
     h1 {
         color: green;
-        padding: 20px 0;
     }
 
     h2 {
         color: gray;
-        padding: 20px 0;
     }
 
     h3 {
         color: palegoldenrod;
-        padding: 10px 0;
     }
 
     h4 {
         color: palegoldenrod;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    a {
-        margin: 10px;
-        padding: 10px;
-        color: white;
-        width: 30px;
-        height:  30px;
-        text-align: center;
-        border-left: 1px solid yellow;
-        border-bottom: 1px solid yellow;
     }
 
     @media screen and (max-width: 600px) {
@@ -82,12 +86,20 @@
         .footer-div div div {
             max-width: 100%;
         }
+
+        .footer-div-3 h4 {
+            text-align: left;
+        }
+
+        .footer-div-3 div div {
+            flex-direction: row;
+        }
     }
 </style>
 
 <div class="footer-div">
     <div>
-        <div>
+        <div class="footer-div-1">
             <h1>Selenium Capital</h1>
             <p>Selenium Blockchain has no control over information available at or through hyperlinked sites. Selenium
                 Blockchain makes
@@ -101,25 +113,30 @@
                 In no event
                 shall Selenium Blockchain be responsible for your use of a hyperlinked site.</p>
         </div>
-        <div>
-            <h2>"Moonstop"</h2>
+
+        <div class="footer-div-2">
+            <h2>"We shall never surrender"</h2>
             <h3>Victor Leung</h3>
             <p>Selenium Capital</p>
         </div>
 
-        <div>
+        <div class="footer-div-3">
             <h4>Contact Us</h4>
             <div>
-                <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
-                        class="fa fa-linkedin"></i></a>
-                <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
-                <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
-                        class="fa fa-envelope-square"></i></a>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
+                    <a target="_blank"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
+                            class="fa fa-envelope-square"></i></a>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div>
+    <div class="footer-div-4">
         <div>
             <p>Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
 
