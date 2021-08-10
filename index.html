@@ -1,8 +1,132 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Merienda&amp;display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/a391300b41.css" media="all" rel="stylesheet">
+
 <style>
-  * {
-    margin: 0;
-    overflow-x: hidden;
-  }
+    * {
+        overflow: none;
+        margin: 0;
+        overflow: auto;
+        font-family: "Merienda", cursive;
+    }
+
+    .footer-div {
+        width: 100%;
+        background: linear-gradient(190deg, darkred 0%, rgb(2, 2, 49) 51%, #013654 100%);
+
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .footer-div div {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .footer-div div div {
+        max-width: 50%;
+        padding: 35px;
+        flex-direction: column;
+
+    }
+
+    .footer-div div div div {
+        flex-direction: row;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    h1 {
+        color: green;
+        padding: 20px 0;
+    }
+
+    h2 {
+        color: gray;
+        padding: 20px 0;
+    }
+
+    h3 {
+        color: palegoldenrod;
+        padding: 10px 0;
+    }
+
+    h4 {
+        color: palegoldenrod;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    a {
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        width: 30px;
+        height:  30px;
+        text-align: center;
+        border-left: 1px solid yellow;
+        border-bottom: 1px solid yellow;
+    }
+
+    @media screen and (max-width: 600px) {
+        .footer-div div {
+            flex-direction: column;
+        }
+
+        .footer-div div div {
+            max-width: 100%;
+        }
+    }
 </style>
 
-<iframe style='width: 100vw; height: 100vh;' src="https://myworldbox.github.io"></iframe>
+<div class="footer-div">
+    <div>
+        <div>
+            <h1>Selenium Capital</h1>
+            <p>Selenium Blockchain has no control over information available at or through hyperlinked sites. Selenium
+                Blockchain makes
+                no representation as to, and is not responsible for, the quality, content, nature or reliability of any
+                hyperlinked
+                site, or any information available on or through any such sites or websites. Selenium Blockchain
+                provides hyperlinks, if
+                any, to you only as a convenience, and the inclusion of any hyperlink does not imply any endorsement,
+                investigation,
+                verification or monitoring by Selenium Blockchain of any information contained in any hyperlinked site.
+                In no event
+                shall Selenium Blockchain be responsible for your use of a hyperlinked site.</p>
+        </div>
+        <div>
+            <h2>"Moonstop"</h2>
+            <h3>Victor Leung</h3>
+            <p>Selenium Capital</p>
+        </div>
+
+        <div>
+            <h4>Contact Us</h4>
+            <div>
+                <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
+                        class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
+                <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
+                        class="fa fa-envelope-square"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <p>Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
+
+                Moonstop
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="https://use.fontawesome.com/a391300b41.js"></script>
