@@ -10,158 +10,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&amp;display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/a391300b41.css" media="all" rel="stylesheet">
-    <style>
-        * {
-            overflow: none;
-            margin: 0;
-            padding: 0;
-            overflow: auto;
-            font-family: "Merienda", cursive;
-        }
-
-        .main-div div {
-            width: 100%;
-        }
-
-        .main-div,
-        .footer-div {
-            background: linear-gradient(190deg, darkred 0%, rgb(2, 2, 49) 51%, #013654 100%);
-            display: flex;
-            padding: 0 0 20px 0;
-            flex-direction: column;
-            color: white;
-            font-size: 0.8rem;
-        }
-
-        .footer-div div {
-            display: flex;
-            flex-direction: row;
-            margin: 0;
-        }
-
-        .footer-div div div {
-            max-width: 50%;
-            flex-direction: column;
-
-        }
-
-        .main-div-2 {
-            display: flex;
-        }
-
-        .main-div-2 div {
-            width: 100%;
-            justify-content: center;
-            display: flex;
-        }
-
-        .main-div-2 div div {
-            background: black;
-            border: 1px solid white;
-            width: 30%;
-            flex-direction: column;
-        }
-
-        .footer-div-3 div {
-            width: 100%;
-            flex-direction: row;
-            text-align: center;
-        }
-
-
-        a {
-            padding: 15px;
-            color: white;
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            border-right: 1px solid yellow;
-        }
-
-        p,
-        h1,
-        h2,
-        h3,
-        h4 {
-            text-align: left;
-        }
-
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            padding: 20px 15px 10px;
-        }
-
-        h1 {
-            color: green;
-        }
-
-        h2 {
-            color: gray;
-        }
-
-        h3 {
-            color: palegoldenrod;
-        }
-
-        h4 {
-            color: palegoldenrod;
-        }
-
-        h5 {
-            color: palegoldenrod;
-            text-align: center;
-        }
-
-        h6 {
-            color: palegoldenrod;
-            text-align: center;
-        }
-
-        @media screen and (max-width: 600px) {
-
-            .main-div div div,
-            .footer-div div {
-                flex-direction: column;
-            }
-
-            .main-div-2 div {
-                align-items: center;
-            }
-
-            .main-div-2 div div {
-                width: 70%;
-            }
-
-            .footer-div div div {
-                max-width: 100%;
-            }
-
-            .footer-div-3 span {
-                flex-direction: row;
-            }
-        }
-    </style>
+    <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <header>
+        <div class="header-div" id="topItem">
+            <a class="company" href="/">Atlantis Blockchain</a>
+            <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
+                    class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
+                    class="fa fa-envelope-square"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
     <main>
-        <div class="main-div">
+
+        <div class="main-div-1">
+            <canvas class="main-canvas">
+            </canvas>
+            <p class="p1-2">Selenium Capital</p>
+        </div>
+
+
+        <div class="main-div-2">
 
             <div>
-                <div class="main-div-1">
-                    <h5>hello</h5>
-                    <h6>you are dope</h6>
+                <div class="main-div-2-1">
+                    <p class="p1-2">Why Selenium Capital?</p>
+                    <p class="p3-2">"Seeking Alpha"</p>
                 </div>
 
             </div>
 
             <div>
-                <div class="main-div-2">
+                <div class="main-div-2-2">
 
                     <div>
                         <div>
@@ -184,8 +72,9 @@
         <div class="footer-div">
             <div>
                 <div class="footer-div-1">
-                    <h1>Selenium Capital</h1>
-                    <p>Selenium Blockchain has no control over information available at or through hyperlinked sites.
+                    <p class="p1-1">Selenium Capital</p>
+                    <p class="p5-2">Selenium Blockchain has no control over information available at or through
+                        hyperlinked sites.
                         Selenium
                         Blockchain makes
                         no representation as to, and is not responsible for, the quality, content, nature or reliability
@@ -205,13 +94,13 @@
                 </div>
 
                 <div class="footer-div-2">
-                    <h2>"We shall never surrender"</h2>
-                    <h3>Victor Leung</h3>
+                    <p class="p3-1">"We shall never surrender"</p>
+                    <p class="p4-2">Victor Leung</p>
                     <p>Selenium Capital</p>
                 </div>
 
                 <div class="footer-div-3">
-                    <h4>Contact Us</h4>
+                    <p class="p3-1">Contact Us</p>
                     <span>
                         <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
                                 class="fa fa-linkedin"></i></a>
@@ -225,7 +114,7 @@
 
             <div class="footer-div-4">
                 <div>
-                    <p>Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
+                    <p class="p4-2">Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
 
                         Moonstop
                     </p>
@@ -234,6 +123,8 @@
         </div>
     </footer>
 </body>
+
 <script src="https://use.fontawesome.com/a391300b41.js"></script>
+<script type="text/javascript" src="canvas.js"></script>
 
 </html>

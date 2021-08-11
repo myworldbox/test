@@ -1,0 +1,227 @@
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: auto;
+  font-family: "Merienda", cursive;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+a.company {
+
+    width: 250px;
+  background-color: red;
+  color: white;
+  top: 0;
+  left: 0;
+}
+
+.header-div a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+a.icon {
+  display: none;
+}
+
+.header-div a:hover {
+  background-color: palegoldenrod;
+  color: darkred;
+}
+
+
+.main-div-1 p {
+  background-color: #013654;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-div-2 div {
+  width: 100%;
+}
+
+.main-div-2 {
+  background: linear-gradient(
+    190deg,
+    rgb(21, 21, 22) 0%,
+    rgb(2, 2, 49) 51%,
+    #013654 100%
+  );
+  display: flex;
+  padding: 200px 0 200px 0;
+  flex-direction: column;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer-div {
+  background: linear-gradient(
+    190deg,
+    darkred 0%,
+    rgb(2, 2, 49) 51%,
+    #013654 100%
+  );
+  display: flex;
+  padding: 60px 0 60px 0;
+  flex-direction: column;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer-div div {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.footer-div div div {
+  max-width: 50%;
+  flex-direction: column;
+}
+
+.main-div-2-2 {
+  display: flex;
+}
+
+.main-div-2-2 div {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.main-div-2-2 div div {
+  width: 30%;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.main-div-2-1 p {
+  text-align: center;
+}
+
+.main-div-2-2 div p {
+  width: 80%;
+}
+
+.footer-div-3 div {
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+}
+
+a {
+  padding: 15px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+p,
+.p1-1,
+.p1-2,
+.p2-1,
+.p2-2,
+.p3-1,
+.p3-2,
+.p4-1,
+.p4-2,
+.p5-1,
+.p6-2 {
+  padding: 20px;
+  text-align: left;
+}
+
+.p1-1 {
+  font-size: 30px;
+  color: lawngreen;
+}
+
+.p1-2 {
+  font-size: 30px;
+  color: rgb(209, 201, 223);
+}
+
+.p2-1 {
+  font-size: 25px;
+  color: gray;
+}
+
+.p2-2 {
+  font-size: 25px;
+  color: gray;
+}
+
+.p3-1 {
+  font-size: 20px;
+  color: palegoldenrod;
+}
+
+.p3-2 {
+  font-size: 20px;
+  color: rgb(209, 99, 26);
+}
+
+.p4-1 {
+  font-size: 15px;
+  color: rgb(240, 75, 171);
+}
+
+.p4-2 {
+  font-size: 15px;
+  color: palevioletred;
+}
+
+.p5-1 {
+  font-size: 10px;
+  color: rgb(96, 211, 42);
+}
+
+.p5-2 {
+  font-size: 10px;
+  color: plum;
+}
+
+@media screen and (max-width: 600px) {
+  .main-div-2 div div,
+  .footer-div div {
+    flex-direction: column;
+  }
+
+  .main-div-2-2 div {
+    align-items: center;
+  }
+
+  .main-div-2-2 div div {
+    width: 80%;
+  }
+
+  .footer-div div div {
+    max-width: 100%;
+  }
+
+  .footer-div-3 span {
+    flex-direction: row;
+  }
+}
