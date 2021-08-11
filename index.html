@@ -12,9 +12,15 @@
         font-family: "Merienda", cursive;
     }
 
+    .main-div div {
+        width: 100%;
+    }
+
+    .main-div,
     .footer-div {
         background: linear-gradient(190deg, darkred 0%, rgb(2, 2, 49) 51%, #013654 100%);
         display: flex;
+        padding: 0 0 20px 0;
         flex-direction: column;
         color: white;
         font-size: 0.8rem;
@@ -28,10 +34,25 @@
 
     .footer-div div div {
         max-width: 50%;
-        margin-top: 20px;
-        padding: 0 20px;
         flex-direction: column;
 
+    }
+
+    .main-div-2 {
+        display: flex;
+    }
+
+    .main-div-2 div {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .main-div-2 div div {
+        background: black;
+        border: 1px solid white;
+        width: 30%;
+        flex-direction: column;
     }
 
     .footer-div-3 div {
@@ -42,8 +63,7 @@
 
 
     a {
-        margin: 15px;
-        padding: 5px;
+        padding: 15px;
         color: white;
         width: 20px;
         height: 20px;
@@ -55,11 +75,18 @@
     h1,
     h2,
     h3,
+    h4 {
+        text-align: left;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
     h4,
     h5,
     h6 {
-        text-align: left;
-        padding: 20px 0;
+        padding: 20px 15px 10px;
     }
 
     h1 {
@@ -78,64 +105,122 @@
         color: palegoldenrod;
     }
 
+    h5 {
+        color: palegoldenrod;
+        text-align: center;
+    }
+
+    h6 {
+        color: palegoldenrod;
+        text-align: center;
+    }
+
     @media screen and (max-width: 600px) {
+
+        .main-div div div,
         .footer-div div {
             flex-direction: column;
+        }
+
+        .main-div-2 div {
+            align-items: center;
+        }
+
+        .main-div-2 div div {
+            width: 70%;
         }
 
         .footer-div div div {
             max-width: 100%;
         }
-        
+
         .footer-div-3 span {
             flex-direction: row;
         }
     }
 </style>
 
-<div class="footer-div">
-    <div>
-        <div class="footer-div-1">
-            <h1>Selenium Capital</h1>
-            <p>Selenium Blockchain has no control over information available at or through hyperlinked sites. Selenium
-                Blockchain makes
-                no representation as to, and is not responsible for, the quality, content, nature or reliability of any
-                hyperlinked
-                site, or any information available on or through any such sites or websites. Selenium Blockchain
-                provides hyperlinks, if
-                any, to you only as a convenience, and the inclusion of any hyperlink does not imply any endorsement,
-                investigation,
-                verification or monitoring by Selenium Blockchain of any information contained in any hyperlinked site.
-                In no event
-                shall Selenium Blockchain be responsible for your use of a hyperlinked site.</p>
-        </div>
+<main>
+    <div class="main-div">
 
-        <div class="footer-div-2">
-            <h2>"We shall never surrender"</h2>
-            <h3>Victor Leung</h3>
-            <p>Selenium Capital</p>
-        </div>
-
-        <div class="footer-div-3">
-            <h4>Contact Us</h4>
-            <span>
-                <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
-                        class="fa fa-linkedin"></i></a>
-                <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
-                <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
-                        class="fa fa-envelope-square"></i></a>
-                </span>
-        </div>
-    </div>
-
-    <div class="footer-div-4">
         <div>
-            <p>Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
+            <div class="main-div-1">
+                <h5>hello</h5>
+                <h6>you are dope</h6>
+            </div>
 
-                Moonstop
-            </p>
+        </div>
+
+        <div>
+            <div class="main-div-2">
+
+                <div>
+                    <div>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                    <div>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</main>
+
+<footer>
+    <div class="footer-div">
+        <div>
+            <div class="footer-div-1">
+                <h1>Selenium Capital</h1>
+                <p>Selenium Blockchain has no control over information available at or through hyperlinked sites.
+                    Selenium
+                    Blockchain makes
+                    no representation as to, and is not responsible for, the quality, content, nature or reliability of
+                    any
+                    hyperlinked
+                    site, or any information available on or through any such sites or websites. Selenium Blockchain
+                    provides hyperlinks, if
+                    any, to you only as a convenience, and the inclusion of any hyperlink does not imply any
+                    endorsement,
+                    investigation,
+                    verification or monitoring by Selenium Blockchain of any information contained in any hyperlinked
+                    site.
+                    In no event
+                    shall Selenium Blockchain be responsible for your use of a hyperlinked site.</p>
+            </div>
+
+            <div class="footer-div-2">
+                <h2>"We shall never surrender"</h2>
+                <h3>Victor Leung</h3>
+                <p>Selenium Capital</p>
+            </div>
+
+            <div class="footer-div-3">
+                <h4>Contact Us</h4>
+                <span>
+                    <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
+                    <a target="_blank"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
+                            class="fa fa-envelope-square"></i></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footer-div-4">
+            <div>
+                <p>Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
+
+                    Moonstop
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="https://use.fontawesome.com/a391300b41.js"></script>
