@@ -1,2 +1,3 @@
-2021/08/13-14:40:43.380 13a03 Creating DB /Users/myworldbox/Desktop/test/~/.test/Default/Sync Data/LevelDB since it was missing.
-2021/08/13-14:40:43.458 13a03 Reusing MANIFEST /Users/myworldbox/Desktop/test/~/.test/Default/Sync Data/LevelDB/MANIFEST-000001
+2021/08/13-15:28:26.358 15703 Reusing MANIFEST /Users/myworldbox/Desktop/test/~/.test/Default/Sync Data/LevelDB/MANIFEST-000001
+2021/08/13-15:28:26.359 15703 Recovering log #3
+2021/08/13-15:28:26.359 15703 Reusing old log /Users/myworldbox/Desktop/test/~/.test/Default/Sync Data/LevelDB/000003.log 

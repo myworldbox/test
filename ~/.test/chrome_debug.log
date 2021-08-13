@@ -1,2 +1,2 @@
-[21322:26375:0813/144107.271017:WARNING:dns_config_service_posix.cc(192)] Failed to read DnsConfig.
-[21322:259:0813/144117.184517:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[22856:30211:0813/152849.267049:WARNING:dns_config_service_posix.cc(192)] Failed to read DnsConfig.
+[22856:259:0813/152933.604840:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

@@ -8,14 +8,30 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Replace below path with the absolute path
-# to chromedriver in your computer
-
 options = webdriver.ChromeOptions();
-options.add_argument("user-data-dir=~/.test")
-# Create the folder. Change path accordingly
+
+#options.add_argument("user-data-dir=~/.test")
+
+options.add_argument("user-data-dir=/Users/myworldbox/Library/Application Support/Google/Chrome")
+options.add_argument('--disable-gpu')  # 禁用gpu
+options.add_argument("--start-maximized")  # 視窗最大
+options.add_argument('--no-sandbox')
+options.add_argument('--ignore-certificate-errors') #忽略一些莫名的問題
+# options.add_argument('--proxy-server={0}'.format(proxy.proxy))  # 加代理
+options.add_experimental_option('excludeSwitches', ['enable-automation'])  # 開啟開發者模式
+options.add_argument('--disable-blink-features=AutomationControlled')  # 谷歌88版以上防止被檢測
+options.add_argument("--disable-blink-features")
+#options.add_argument("--incognito");
 
 driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+  "source": """
+    Object.defineProperty(navigator, 'webdriver', {
+      get: () => undefined
+    })
+  """
+})
+
 driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver, 600)
 
