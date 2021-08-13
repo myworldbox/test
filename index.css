@@ -47,7 +47,6 @@ a.icon {
 
 
 .main-div-1 p {
-  background-color: #013654;
   position: absolute;
   width: fit-content;
   top: 50%;
@@ -62,12 +61,7 @@ a.icon {
 }
 
 .main-div-2 {
-  background: linear-gradient(
-    190deg,
-    rgb(21, 21, 22) 0%,
-    rgb(2, 2, 49) 51%,
-    #013654 100%
-  );
+background: rgb(40, 45, 95);
   display: flex;
   padding: 200px 0 200px 0;
   flex-direction: column;
@@ -113,6 +107,10 @@ a.icon {
 .main-div-2-2 div div {
   width: 30%;
   flex-direction: column;
+  align-items: center;
+}
+
+.border-1 {
   border: 1px solid white;
 }
 
