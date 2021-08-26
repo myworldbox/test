@@ -1,155 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selenium Capital</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&amp;display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/a391300b41.css" media="all" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <title>Send Mail</title>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+            window.open('mailto:54nicholasleung45@gmail.com?subject=verficationcode&body=' + encodeURIComponent('123\n321\n123'))
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
 </head>
 
 <body>
-
-    <header>
-        <div class="header-div" id="topItem">
-            <a class="company" href="/">UniInflux</a>
-            <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
-                    class="fa fa-linkedin"></i></a>
-            <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
-            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
-                    class="fa fa-envelope-square"></i></a>
-            <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </header>
-
-    <main>
-
-        <div class="main-div-1">
-            <canvas class="main-canvas">
-            </canvas>
-            <p class="p1-2">Selenium Capital</p>
-        </div>
-
-
-        <div class="main-div-2">
-
-            <div>
-                <div class="main-div-2-1">
-                    <p class="p1-2">Why Selenium Capital?</p>
-                    <p class="p3-2">"Seeking Alpha"</p>
-                </div>
-
-            </div>
-
-            <div>
-                <div class="main-div-2-2">
-                    <div>
-                        <div>
-                            <p class="p3-1">Trained professional</p>
-                            <p class="border-1">Atlantis Blockchain Ltd is focused on gaining exposure to the blockchain
-                                ecosystem
-                                through cryptocurrency mining
-                                operations, joint ventures, and targeted investments in the sector. Atlantis Blockchain
-                                Ltd primarily focuses on
-                                Etherium and NFT development. The Company has deployed approximately twenty ETH-targeted
-                                Etherium miners. Apart from the
-                                crypto-mining business, Atlantis Blockchain Ltd also has devoted itself to Algo-trading
-                                and developing DEX arbitrage
-                                trading software, and offer crypto-currency investment services. We aim to become the
-                                biggest blockchain pioneer in Hong
-                                Kong.</p>
-                            <p class="border-1">Investment professional with two years of industry experience for
-                                multiple asset classes.
-                                80x profit in the previous two
-                                years with extensive trading in derivatives, margin, crypto-currency, and flash loan
-                                arbitrage DEX trading.</p>
-                            <p class="border-1">To minimise the effect of not only the news but also market flucatation,
-                                mined coins will
-                                be sold strategically
-                                according to our prediction tools. A maximized profit is ensured.</p>
-                        </div>
-                        <div>
-                            <p class="p3-1">Insightful planner</p>
-                            <p class="border-1">1</p>
-                            <p class="border-1">2</p>
-                            <p class="border-1">3</p>
-                        </div>
-                        <div>
-                            <p class="p3-1">Insightful planner</p>
-                            <p class="border-1">1</p>
-                            <p class="border-1">2</p>
-                            <p class="border-1">3</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-div">
-            <div>
-                <div class="footer-div-1">
-                    <p class="p1-1">Selenium Capital</p>
-                    <p class="p5-2">Selenium Blockchain has no control over information available at or through
-                        hyperlinked sites.
-                        Selenium
-                        Blockchain makes
-                        no representation as to, and is not responsible for, the quality, content, nature or reliability
-                        of
-                        any
-                        hyperlinked
-                        site, or any information available on or through any such sites or websites. Selenium Blockchain
-                        provides hyperlinks, if
-                        any, to you only as a convenience, and the inclusion of any hyperlink does not imply any
-                        endorsement,
-                        investigation,
-                        verification or monitoring by Selenium Blockchain of any information contained in any
-                        hyperlinked
-                        site.
-                        In no event
-                        shall Selenium Blockchain be responsible for your use of a hyperlinked site.</p>
-                </div>
-
-                <div class="footer-div-2">
-                    <p class="p3-1">"We shall never surrender"</p>
-                    <p class="p4-2">Victor Leung</p>
-                    <p>Selenium Capital</p>
-                </div>
-
-                <div class="footer-div-3">
-                    <p class="p3-1">Contact Us</p>
-                    <span>
-                        <a target="_blank" href="https://www.linkedin.com/company/atlantis-blockchain-ltd/"><i
-                                class="fa fa-linkedin"></i></a>
-                        <a target="_blank" href="https://wa.me/85251164917"><i class="fa fa-whatsapp"></i></a>
-                        <a target="_blank"
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=phantomgodmoon@protonmail.com"><i
-                                class="fa fa-envelope-square"></i></a>
-                    </span>
-                </div>
-            </div>
-
-            <div class="footer-div-4">
-                <div>
-                    <p class="p4-2">Selenium Blockchain Ltd. Copyright © 2021. All rights reserved.
-
-                        Moonstop
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <form method="post">
+        <input type="button" value="Send Email" onclick="sendEmail()" />
+    </form>
 </body>
-
-<script src="https://use.fontawesome.com/a391300b41.js"></script>
-<script type="text/javascript" src="canvas.js"></script>
 
 </html>
