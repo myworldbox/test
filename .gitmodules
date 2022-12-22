@@ -1,0 +1,6 @@
+[submodule "resources"]
+	path = resources
+	url = https://github.com/myworldbox/resources
+[submodule "myworldbox"]
+	path = myworldbox
+	url = https://github.com/myworldbox/myworldbox
